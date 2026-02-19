@@ -1,0 +1,1416 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAYAT ULLAH - Web Developer & Digital Marketer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Ramadan Promotional Banner -->
+    <div class="ramadan-banner" id="ramadanBanner">
+        <div class="ramadan-banner-content">
+            <div class="ramadan-banner-left">
+                <span class="ramadan-icon"><i class="fas fa-moon"></i></span>
+                <span class="ramadan-badge">Ramadan Special</span>
+            </div>
+            <div class="ramadan-banner-center">
+                <p class="ramadan-headline">
+                    <span class="ramadan-offer">20% OFF</span> All Digital Services — Limited Time Offer
+                </p>
+                <p class="ramadan-subtext">Valid throughout the blessed month of Ramadan</p>
+            </div>
+            <div class="ramadan-banner-right">
+                <button type="button" class="btn btn-ramadan-cta" id="openDiscountModal">
+                    <span>Claim Discount</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button type="button" class="ramadan-close" id="closeRamadanBanner" aria-label="Close banner">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home">
+                    <span class="logo-text">HAYAT ULLAH</span>
+                    <span class="logo-dot">.</span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="navbar-cta">
+                <button type="button" class="btn btn-navbar-cta" id="openChatFromNav">
+                    <span>Let's Talk</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Left Side Floating Elements -->
+        <div class="hero-side-decor hero-side-left">
+            <!-- Floating Service Icons -->
+            <div class="floating-icon floating-icon-1" title="Web Development">
+                <i class="fas fa-code"></i>
+            </div>
+            <div class="floating-icon floating-icon-2" title="Digital Marketing">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="floating-icon floating-icon-3" title="Graphic Design">
+                <i class="fas fa-palette"></i>
+            </div>
+            <!-- Trust Badge -->
+            <div class="hero-trust-badge trust-badge-left">
+                <span class="trust-badge-number">500+</span>
+                <span class="trust-badge-text">Projects Globally</span>
+            </div>
+            <!-- Decorative Orb -->
+            <div class="decor-orb orb-left-1"></div>
+            <div class="decor-orb orb-left-2"></div>
+        </div>
+
+        <!-- Right Side Floating Elements -->
+        <div class="hero-side-decor hero-side-right">
+            <!-- Floating Service Icons -->
+            <div class="floating-icon floating-icon-4" title="Online Quran Teaching">
+                <i class="fas fa-quran"></i>
+            </div>
+            <div class="floating-icon floating-icon-5" title="GMB Profile">
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="floating-icon floating-icon-6" title="Travel Services">
+                <i class="fas fa-plane-departure"></i>
+            </div>
+            <!-- Trust Badge -->
+            <div class="hero-trust-badge trust-badge-right">
+                <span class="trust-badge-icon">⭐</span>
+                <span class="trust-badge-number">5.0</span>
+                <span class="trust-badge-text">Rated by 200+ Clients</span>
+            </div>
+            <!-- Ramadan Offer Ribbon -->
+            <div class="hero-ramadan-ribbon">
+                <span class="ribbon-icon"><i class="fas fa-moon"></i></span>
+                <span class="ribbon-text">Ramadan<br><strong>20-30% OFF</strong></span>
+            </div>
+            <!-- Decorative Orb -->
+            <div class="decor-orb orb-right-1"></div>
+            <div class="decor-orb orb-right-2"></div>
+        </div>
+
+        <!-- Decorative Flow Lines -->
+        <svg class="hero-flow-lines" viewBox="0 0 1440 600" preserveAspectRatio="none">
+            <path class="flow-line flow-line-1" d="M0,300 Q360,200 720,300 T1440,300" />
+            <path class="flow-line flow-line-2" d="M0,350 Q360,450 720,350 T1440,350" />
+        </svg>
+
+        <div class="hero-container hero-centered">
+            <div class="hero-content-main">
+                <div class="hero-overline">
+                    <span class="overline-badge">
+                        <span class="pulse-dot"></span>
+                        Available for Projects
+                    </span>
+                </div>
+                <h1 class="hero-headline">Transforming Ideas Into<br><span class="gradient-text">Digital Success
+                        Stories</span></h1>
+                <p class="hero-subheadline">I help businesses build powerful websites, grow through strategic marketing,
+                    and individuals learn Quran — delivering results for clients across 15+ countries worldwide.</p>
+
+                <div class="hero-buttons-main">
+                    <a href="#portfolio" class="btn btn-primary-hero">
+                        <i class="fas fa-briefcase"></i> View My Work
+                    </a>
+                    <button type="button" class="btn btn-secondary-hero" id="openContactOverlay">
+                        <i class="fas fa-comments"></i> Free Consultation
+                    </button>
+                </div>
+
+                <div class="hero-credibility">
+                    <div class="credibility-stats">
+                        <div class="cred-stat">
+                            <span class="cred-number">100+</span>
+                            <span class="cred-label">Projects Delivered</span>
+                        </div>
+                        <div class="cred-divider"></div>
+                        <div class="cred-stat">
+                            <span class="cred-number">50+</span>
+                            <span class="cred-label">Happy Clients</span>
+                        </div>
+                        <div class="cred-divider"></div>
+                        <div class="cred-stat">
+                            <span class="cred-number">5+</span>
+                            <span class="cred-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="hero-trust-line">
+                        <p>Trusted by clients in:</p>
+                        <div class="trust-flags-inline">
+                            <span title="USA">🇺🇸</span>
+                            <span title="UK">🇬🇧</span>
+                            <span title="UAE">🇦🇪</span>
+                            <span title="Saudi Arabia">🇸🇦</span>
+                            <span title="Canada">🇨🇦</span>
+                            <span title="Australia">🇦🇺</span>
+                            <span title="Germany">🇩🇪</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Arrow -->
+        <div class="scroll-arrow">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Contact Overlay -->
+    <div class="contact-overlay" id="contactOverlay">
+        <div class="contact-overlay-backdrop" id="closeOverlayBackdrop"></div>
+        <div class="contact-overlay-panel">
+            <button type="button" class="overlay-close" id="closeContactOverlay">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="overlay-form-header">
+                <span class="overlay-badge">Free Consultation</span>
+                <h3>Let's Start Your Project</h3>
+                <p>Tell us what you need — we'll respond within 24 hours</p>
+            </div>
+            <form class="overlay-form" id="contactOverlayForm">
+                <div class="overlay-form-row">
+                    <div class="overlay-form-group">
+                        <label for="overlayName">Full Name</label>
+                        <input type="text" id="overlayName" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="overlay-form-group">
+                        <label for="overlayEmail">Email Address</label>
+                        <input type="email" id="overlayEmail" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="overlay-form-group">
+                    <label for="overlayService">Service Interested In</label>
+                    <select id="overlayService" name="service" required>
+                        <option value="">Choose a service...</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="digital-marketing">Digital Marketing</option>
+                        <option value="graphic-design">Graphic Design</option>
+                        <option value="seo-optimization">SEO Optimization</option>
+                        <option value="visa-travel">Visa & Travel Solutions</option>
+                        <option value="quran-teaching">Online Quran Teaching</option>
+                        <option value="social-media">Social Media Marketing</option>
+                        <option value="gmb-profile">GMB Profile Creation</option>
+                        <option value="design-thinking">Design Thinking</option>
+                        <option value="tajweed-hifz">Tajweed & Hifz Program</option>
+                    </select>
+                </div>
+                <div class="overlay-form-group">
+                    <label for="overlayMessage">Message <span class="optional-tag">(Optional)</span></label>
+                    <textarea id="overlayMessage" name="message" placeholder="Briefly describe your project..."
+                        rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-overlay-submit">
+                    Get Free Consultation <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+            <p class="overlay-disclaimer"><i class="fas fa-lock"></i> Your information is 100% secure and never shared.
+            </p>
+        </div>
+    </div>
+
+    <!-- Ramadan Discount Modal -->
+    <div class="discount-modal" id="discountModal">
+        <div class="discount-modal-backdrop" id="closeDiscountBackdrop"></div>
+        <div class="discount-modal-panel">
+            <button type="button" class="modal-close" id="closeDiscountModal" aria-label="Close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="discount-modal-header">
+                <div class="discount-icon-wrap">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <span class="discount-badge">Ramadan Special Offer</span>
+                <h3>Claim Your <span class="highlight">20-30% OFF</span></h3>
+                <p>Limited time discount on all digital services during the blessed month of Ramadan</p>
+            </div>
+            <form class="discount-form" id="discountForm">
+                <div class="discount-form-row">
+                    <div class="discount-form-group">
+                        <label for="discountName">Your Name</label>
+                        <input type="text" id="discountName" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="discount-form-group">
+                        <label for="discountEmail">Email Address</label>
+                        <input type="email" id="discountEmail" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+                <div class="discount-form-group">
+                    <label for="discountService">Service You Need</label>
+                    <select id="discountService" name="service" required>
+                        <option value="">Choose a service...</option>
+                        <option value="web-development">Web Development (20% OFF)</option>
+                        <option value="digital-marketing">Digital Marketing (25% OFF)</option>
+                        <option value="graphic-design">Graphic Design (20% OFF)</option>
+                        <option value="gmb-profile">GMB Profile Creation (30% OFF)</option>
+                        <option value="visa-travel">Visa & Travel Services (20% OFF)</option>
+                    </select>
+                </div>
+                <div class="discount-form-group">
+                    <label for="discountPhone">WhatsApp Number</label>
+                    <input type="tel" id="discountPhone" name="phone" placeholder="+92 300 1234567">
+                </div>
+                <button type="submit" class="btn btn-discount-submit">
+                    <i class="fas fa-gift"></i> Claim My Ramadan Discount
+                </button>
+            </form>
+            <p class="discount-disclaimer">
+                <i class="fas fa-clock"></i> Offer valid until end of Ramadan · <i class="fas fa-shield-alt"></i> 100%
+                Secure
+            </p>
+        </div>
+    </div>
+
+    <!-- Chat Widget (Let's Talk) -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-widget-panel">
+            <div class="chat-widget-header">
+                <div class="chat-avatar">
+                    <span>AR</span>
+                    <span class="chat-status-dot"></span>
+                </div>
+                <div class="chat-header-info">
+                    <h4>Ahmad Raza</h4>
+                    <p><span class="status-text">Available</span> · Usually replies in minutes</p>
+                </div>
+                <button type="button" class="chat-close" id="closeChatWidget" aria-label="Close chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-widget-body">
+                <div class="chat-bubble chat-bubble-received">
+                    <p>Hi there! 👋 How can I help you today?</p>
+                    <span class="chat-time">Just now</span>
+                </div>
+            </div>
+            <form class="chat-widget-form" id="chatForm">
+                <div class="chat-input-wrap">
+                    <input type="text" id="chatMessage" name="message" placeholder="Type your message..." required>
+                    <button type="submit" class="chat-send-btn" aria-label="Send message">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <p class="chat-hint">Press Enter to send · We'll respond via email</p>
+            </form>
+        </div>
+    </div>
+    <button type="button" class="chat-widget-trigger" id="openChatWidget" aria-label="Open chat">
+        <i class="fas fa-comments"></i>
+        <span class="chat-trigger-badge">1</span>
+    </button>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="about-top-row">
+                <div class="about-header">
+                    <h2 class="about-badge">About Me</h2>
+                    <p class="about-intro">I Help Businesses Grow Online & Students Master the Quran - Trusted by
+                        Clients in 15+ Countries</p>
+                </div>
+                <div class="about-portrait">
+                    <div class="portrait-circle">
+                        <span>AR</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Introduction -->
+            <div class="about-text-layout">
+                <div class="about-main">
+                    <p class="about-lead">Hi, I'm <strong>Hayat ullah</strong> - a results-driven freelancer
+                        specializing in Web Development, Digital Marketing, Graphic Design, and Online Quran Education.
+                        Based in Pakistan, I partner with businesses and individuals across the USA, UK, UAE, Canada,
+                        Australia, and Europe to deliver premium digital solutions.</p>
+                    <p>Whether you need a high-converting website, a strategic marketing campaign, a professional brand
+                        identity, or personalized Quran lessons - I bring <strong>5+ years of hands-on
+                            experience</strong> and a commitment to excellence that turns your goals into measurable
+                        outcomes.</p>
+                </div>
+                <div class="about-text-spacer" aria-hidden="true"></div>
+            </div>
+
+            <!-- Problem Solving Statement -->
+            <div class="about-problem-statement">
+                <div class="problem-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div class="problem-content">
+                    <h3>The Challenges I Solve</h3>
+                    <p>Many businesses struggle with outdated websites, weak online visibility, and inconsistent
+                        branding. Students often lack access to qualified Quran instructors. I bridge these gaps with
+                        tailored solutions - building digital assets that convert, strategies that scale, and education
+                        that transforms.</p>
+                </div>
+            </div>
+
+            <!-- Credentials Stats -->
+            <div class="about-credentials">
+                <div class="credentials-row">
+                    <div class="credential-item">
+                        <span class="credential-number">100+</span>
+                        <span class="credential-label">Projects Delivered</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-number">50+</span>
+                        <span class="credential-label">Happy Clients</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-number">5+</span>
+                        <span class="credential-label">Years Experience</span>
+                    </div>
+                    <div class="credential-item">
+                        <span class="credential-number">15+</span>
+                        <span class="credential-label">Countries Served</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Overview -->
+            <div class="about-services-section">
+                <h3 class="about-services-title">Services I Offer</h3>
+                <div class="about-services-grid">
+                    <div class="about-services-column">
+                        <article class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-code skill-card-icon"></i>
+                                <h3>Web Development</h3>
+                            </div>
+                            <p>Custom, responsive websites built for speed, SEO, and conversions. From landing pages to
+                                full-scale e-commerce platforms.</p>
+                            <div class="skill-card-tools">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span><span>WordPress</span>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-bullhorn skill-card-icon"></i>
+                                <h3>Digital Marketing</h3>
+                            </div>
+                            <p>Data-driven campaigns that drive traffic, generate leads, and maximize ROI. SEO, PPC,
+                                social media, and content marketing.</p>
+                            <div class="skill-card-tools">
+                                <span>Google Ads</span><span>Meta Ads</span><span>SEO</span><span>Analytics</span>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-palette skill-card-icon"></i>
+                                <h3>Graphic Design</h3>
+                            </div>
+                            <p>Professional visual identities, logos, and marketing materials that communicate your
+                                brand's value and stand out.</p>
+                            <div class="skill-card-tools">
+                                <span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Canva</span>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="about-services-column">
+                        <article class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-quran skill-card-icon"></i>
+                                <h3>Online Quran Teaching</h3>
+                            </div>
+                            <p>Certified Tajweed and Hifz instruction for all ages. Flexible one-on-one sessions
+                                tailored to your learning pace.</p>
+                            <div class="skill-card-tools">
+                                <span>Tajweed</span><span>Hifz</span><span>Nazira</span><span>Arabic</span>
+                            </div>
+                        </article>
+                        <article class="skill-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-map-marker-alt skill-card-icon"></i>
+                                <h3>GMB Profile Creation</h3>
+                            </div>
+                            <p>Optimized Google My Business profiles that boost local visibility, drive foot traffic,
+                                and generate leads.</p>
+                            <div class="skill-card-tools">
+                                <span>Google Business</span><span>Local SEO</span><span>Citations</span>
+                            </div>
+                        </article>
+                        <article class="skill-card about-why-card">
+                            <div class="skill-card-header">
+                                <i class="fas fa-star skill-card-icon"></i>
+                                <h3>Why Work With Me?</h3>
+                            </div>
+                            <ul class="skill-subitems">
+                                <li><i class="fas fa-check"></i> <strong>Client-First Approach:</strong> Your goals
+                                    drive every decision.</li>
+                                <li><i class="fas fa-check"></i> <strong>Clear Communication:</strong> Regular updates,
+                                    no surprises.</li>
+                                <li><i class="fas fa-check"></i> <strong>Quality Guaranteed:</strong> Work I'm proud to
+                                    deliver.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Brand & Philosophy -->
+            <div class="about-philosophy">
+                <div class="philosophy-content">
+                    <h3><i class="fas fa-handshake"></i> My Work Philosophy</h3>
+                    <p>I believe great work comes from genuine partnerships. I take the time to understand your vision,
+                        communicate transparently throughout every project, and deliver results that exceed
+                        expectations. Whether you're a startup founder in New York, a business owner in Dubai, or a
+                        parent seeking Quran education for your child in London - I bring the same dedication,
+                        professionalism, and attention to detail to every engagement.</p>
+                </div>
+            </div>
+
+            <!-- Call-to-Action -->
+            <div class="about-cta">
+                <p class="about-cta-text">Ready to elevate your digital presence or begin your Quran learning journey?
+                </p>
+                <div class="about-cta-buttons">
+                    <a href="#portfolio" class="btn btn-blue"><i class="fas fa-briefcase"></i> View My Work</a>
+                    <button type="button" class="btn btn-green" id="openChatFromAbout"><i class="fas fa-comments"></i>
+                        Let's Talk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="skills-intro">
+                <span class="skills-overline">VIP Skills</span>
+                <h2>Professional Expertise</h2>
+                <p class="skills-tagline">International-standard skills delivering premium results for clients
+                    worldwide.</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Web Development -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Web Development</h3>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                    <p class="skill-summary">Building modern, responsive websites with clean code and seamless user
+                        experiences.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Front-end & Back-end</li>
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Performance Optimization</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Full-stack development with expertise in modern frameworks, CMS platforms, and custom
+                            solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Digital Marketing</h3>
+                        <span class="skill-badge">Pro</span>
+                    </div>
+                    <p class="skill-summary">Strategic campaigns to grow your online presence and drive measurable
+                        results.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> PPC Advertising</li>
+                        <li><i class="fas fa-check"></i> Email Marketing</li>
+                        <li><i class="fas fa-check"></i> Conversion Optimization</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Google Ads</span><span>Facebook</span><span>Analytics</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Data-driven marketing strategies including paid ads, automation, and analytics to maximize
+                            ROI.</p>
+                    </div>
+                </div>
+
+                <!-- Graphic Design -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Graphic Design</h3>
+                        <span class="skill-badge">Creative</span>
+                    </div>
+                    <p class="skill-summary">Professional visual designs for branding, marketing, and digital presence.
+                    </p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Logo & Branding</li>
+                        <li><i class="fas fa-check"></i> Social Media Graphics</li>
+                        <li><i class="fas fa-check"></i> Marketing Materials</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Photoshop</span><span>Illustrator</span><span>Canva</span><span>Figma</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Creative solutions from concept to completion, ensuring consistent brand identity.</p>
+                    </div>
+                </div>
+
+                <!-- Online Quran Teaching -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Online Quran Teaching</h3>
+                        <span class="skill-badge">Certified</span>
+                    </div>
+                    <p class="skill-summary">Professional Quran education with personalized one-on-one online sessions.
+                    </p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Quran Reading</li>
+                        <li><i class="fas fa-check"></i> Tajweed Rules</li>
+                        <li><i class="fas fa-check"></i> Hifz Program</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Zoom</span><span>Google Meet</span><span>WhatsApp</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Expert instruction with flexible scheduling, progress tracking, and certificates.</p>
+                    </div>
+                </div>
+
+                <!-- SEO Optimization -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>SEO Optimization</h3>
+                        <span class="skill-badge">Expert</span>
+                    </div>
+                    <p class="skill-summary">Improving search rankings through strategic optimization techniques.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Keyword Research</li>
+                        <li><i class="fas fa-check"></i> On-Page SEO</li>
+                        <li><i class="fas fa-check"></i> Technical SEO</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>SEMrush</span><span>Ahrefs</span><span>Search Console</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Comprehensive SEO strategies to boost organic traffic and outrank competitors.</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Marketing -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Social Media Marketing</h3>
+                        <span class="skill-badge">Pro</span>
+                    </div>
+                    <p class="skill-summary">Growing brand presence across platforms with engaging content strategies.
+                    </p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Content Strategy</li>
+                        <li><i class="fas fa-check"></i> Community Management</li>
+                        <li><i class="fas fa-check"></i> Paid Advertising</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Instagram</span><span>Facebook</span><span>TikTok</span><span>LinkedIn</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Building engaged communities and driving conversions through strategic campaigns.</p>
+                    </div>
+                </div>
+
+                <!-- Design Thinking -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Design Thinking</h3>
+                        <span class="skill-badge">Strategic</span>
+                    </div>
+                    <p class="skill-summary">Human-centered problem solving combining empathy and innovation.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> User Research</li>
+                        <li><i class="fas fa-check"></i> Ideation & Prototyping</li>
+                        <li><i class="fas fa-check"></i> Solution Testing</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Miro</span><span>Figma</span><span>User Testing</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Innovative approaches to complex challenges, creating user-centered solutions.</p>
+                    </div>
+                </div>
+
+                <!-- GMB Profile Creation -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>GMB Profile Creation</h3>
+                        <span class="skill-badge">Local SEO</span>
+                    </div>
+                    <p class="skill-summary">Google Business Profile setup and optimization for local visibility.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Profile Setup</li>
+                        <li><i class="fas fa-check"></i> Map Optimization</li>
+                        <li><i class="fas fa-check"></i> Reviews Management</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Google Business</span><span>Google Maps</span><span>Local SEO</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Maximizing local search presence to attract nearby customers.</p>
+                    </div>
+                </div>
+
+                <!-- Tajweed / Quran Memorization -->
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="skill-item-header">
+                        <h3>Tajweed & Hifz Program</h3>
+                        <span class="skill-badge">Specialist</span>
+                    </div>
+                    <p class="skill-summary">Expert Tajweed training and Quran memorization programs for all levels.</p>
+                    <ul class="skill-features">
+                        <li><i class="fas fa-check"></i> Tajweed Rules</li>
+                        <li><i class="fas fa-check"></i> Memorization Techniques</li>
+                        <li><i class="fas fa-check"></i> Revision Sessions</li>
+                    </ul>
+                    <div class="skill-tools">
+                        <span>Zoom</span><span>Skype</span><span>Certification</span>
+                    </div>
+                    <button class="skill-see-more">See More <i class="fas fa-arrow-right"></i></button>
+                    <div class="skill-description">
+                        <p>Structured programs for beginners to advanced learners with certificates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-intro">
+                <span class="section-overline">Services</span>
+                <h2>Professional Services</h2>
+                <p class="intro-copy">Premium services designed to elevate your brand, grow your presence, and deliver
+                    measurable results.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Web Development -->
+                <article class="service-card green-theme">
+                    <div class="service-card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Web Experience</span>
+                        <h3>Web Development</h3>
+                        <p>High-end responsive web experiences with interactive design, CMS architecture, and
+                            conversion-focused builds.</p>
+                    </div>
+                    <div class="service-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Front-end Development</li>
+                            <li><i class="fas fa-check-circle"></i> Back-end Development</li>
+                            <li><i class="fas fa-check-circle"></i> Interaction Design</li>
+                            <li><i class="fas fa-check-circle"></i> Portfolio Creation</li>
+                            <li><i class="fas fa-check-circle"></i> Performance Optimization</li>
+                        </ul>
+                    </div>
+                    <div class="service-tools">
+                        <h4>Technologies</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">HTML5</span>
+                            <span class="tool-badge">CSS3</span>
+                            <span class="tool-badge">JavaScript</span>
+                            <span class="tool-badge">React</span>
+                            <span class="tool-badge">PHP</span>
+                            <span class="tool-badge">WordPress</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Digital Marketing -->
+                <article class="service-card blue-theme">
+                    <div class="service-card-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Growth Strategy</span>
+                        <h3>Digital Marketing</h3>
+                        <p>Comprehensive digital marketing services to grow your online presence and drive measurable
+                            results.</p>
+                    </div>
+                    <div class="service-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Facebook Ads</li>
+                            <li><i class="fas fa-check-circle"></i> Google Ads</li>
+                            <li><i class="fas fa-check-circle"></i> Instagram Marketing</li>
+                            <li><i class="fas fa-check-circle"></i> TikTok Marketing</li>
+                            <li><i class="fas fa-check-circle"></i> SEO & Content Strategy</li>
+                        </ul>
+                    </div>
+                    <div class="service-tools">
+                        <h4>Platforms</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Facebook</span>
+                            <span class="tool-badge">Google</span>
+                            <span class="tool-badge">Instagram</span>
+                            <span class="tool-badge">TikTok</span>
+                            <span class="tool-badge">LinkedIn</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Graphic Design -->
+                <article class="service-card green-theme">
+                    <div class="service-card-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Creative Design</span>
+                        <h3>Graphic Design</h3>
+                        <p>Professional graphic design services for branding, marketing materials, and visual identity.
+                        </p>
+                    </div>
+                    <div class="service-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Logo Design</li>
+                            <li><i class="fas fa-check-circle"></i> Poster & Banner Creation</li>
+                            <li><i class="fas fa-check-circle"></i> Social Media Graphics</li>
+                            <li><i class="fas fa-check-circle"></i> Brand Identity</li>
+                            <li><i class="fas fa-check-circle"></i> Marketing Collateral</li>
+                        </ul>
+                    </div>
+                    <div class="service-tools">
+                        <h4>Tools & Software</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Canva</span>
+                            <span class="tool-badge">Photoshop</span>
+                            <span class="tool-badge">Illustrator</span>
+                            <span class="tool-badge">Figma</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Online Quran Teaching -->
+                <article class="service-card blue-theme">
+                    <div class="service-card-icon">
+                        <i class="fas fa-book-quran"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Islamic Education</span>
+                        <h3>Online Quran Teaching</h3>
+                        <p>Interactive online Quran teaching sessions with personalized guidance and certified
+                            instruction.</p>
+                    </div>
+                    <div class="service-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Quran Reading</li>
+                            <li><i class="fas fa-check-circle"></i> Tajweed Rules</li>
+                            <li><i class="fas fa-check-circle"></i> Hifz (Memorization)</li>
+                            <li><i class="fas fa-check-circle"></i> One-on-One Classes</li>
+                            <li><i class="fas fa-check-circle"></i> Certificates Provided</li>
+                        </ul>
+                    </div>
+                    <div class="service-tools">
+                        <h4>Platforms</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Zoom</span>
+                            <span class="tool-badge">Google Meet</span>
+                            <span class="tool-badge">WhatsApp</span>
+                            <span class="tool-badge">Skype</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- GMB Profile Creation -->
+                <article class="service-card green-theme">
+                    <div class="service-card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Local SEO</span>
+                        <h3>GMB Profile Creation</h3>
+                        <p>Google My Business profile setup and optimization for maximum local visibility and customer
+                            reach.</p>
+                    </div>
+                    <div class="service-features">
+                        <h4>Key Features</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Profile Creation</li>
+                            <li><i class="fas fa-check-circle"></i> Business Listing</li>
+                            <li><i class="fas fa-check-circle"></i> Map Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Reviews Management</li>
+                            <li><i class="fas fa-check-circle"></i> Local SEO Boost</li>
+                        </ul>
+                    </div>
+                    <div class="service-tools">
+                        <h4>Platforms</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Google Business</span>
+                            <span class="tool-badge">Google Maps</span>
+                            <span class="tool-badge">Google Search</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Visa & Travel Solutions -->
+                <article class="service-card blue-theme service-card-collapsible has-toggle">
+                    <div class="service-card-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="service-card-head">
+                        <span class="service-pill">Travel Services</span>
+                        <h3>Visa & Travel Solutions</h3>
+                        <p>End-to-end visa processing and travel arrangements for Saudi Arabia, GCC countries, and
+                            international destinations.</p>
+                    </div>
+                    <!-- Toggle Buttons -->
+                    <div class="service-toggle-wrapper">
+                        <button type="button" class="service-toggle-btn active" data-view="features">
+                            <i class="fas fa-list-check"></i> Services
+                        </button>
+                        <button type="button" class="service-toggle-btn" data-view="tools">
+                            <i class="fas fa-globe"></i> Destinations
+                        </button>
+                    </div>
+                    <!-- Features Section -->
+                    <div class="service-features visible">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Saudi Visit & Tourist Visa</li>
+                            <li><i class="fas fa-check-circle"></i> Umrah Visa Support</li>
+                            <li><i class="fas fa-check-circle"></i> Flight Ticket Booking</li>
+                            <li><i class="fas fa-check-circle"></i> Embassy Documentation</li>
+                            <li><i class="fas fa-check-circle"></i> Itinerary Planning</li>
+                        </ul>
+                    </div>
+                    <!-- Tools/Destinations Section (Hidden by default) -->
+                    <div class="service-tools-primary">
+                        <h4>Destinations</h4>
+                        <div class="tool-badges">
+                            <span class="tool-badge">Saudi Arabia</span>
+                            <span class="tool-badge">UAE</span>
+                            <span class="tool-badge">Qatar</span>
+                            <span class="tool-badge">Oman</span>
+                            <span class="tool-badge">Turkey</span>
+                            <span class="tool-badge">Malaysia</span>
+                        </div>
+                    </div>
+                    <!-- Collapsible Content -->
+                    <div class="service-expandable" id="visaTravelExpand">
+                        <div class="service-process">
+                            <h4>How It Works</h4>
+                            <ol class="process-steps">
+                                <li><span class="step-num">1</span> Submit Your Details</li>
+                                <li><span class="step-num">2</span> Document Preparation</li>
+                                <li><span class="step-num">3</span> Visa & Booking</li>
+                                <li><span class="step-num">4</span> Confirmation & Travel</li>
+                            </ol>
+                        </div>
+                        <div class="service-tools">
+                            <h4>Airline Partners</h4>
+                            <div class="tool-badges">
+                                <span class="tool-badge">PIA</span>
+                                <span class="tool-badge">Saudi Airlines</span>
+                                <span class="tool-badge">Emirates</span>
+                                <span class="tool-badge">Qatar Airways</span>
+                            </div>
+                        </div>
+                        <div class="service-cta">
+                            <a href="#contact" class="btn btn-service-cta">
+                                <i class="fas fa-paper-plane"></i> Apply for Visa
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Expand Toggle Button -->
+                    <button type="button" class="service-expand-btn" data-target="visaTravelExpand">
+                        <span class="expand-text">View More</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <span class="portfolio-overline">My Work</span>
+                <h2>Featured Projects</h2>
+                <p class="portfolio-intro">A selection of projects that showcase my expertise in web development,
+                    digital marketing, and creative design across diverse industries and global clients.</p>
+            </div>
+
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th-large"></i>
+                    <span>All Projects</span>
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <i class="fas fa-code"></i>
+                    <span>Web Development</span>
+                </button>
+                <button class="filter-btn" data-filter="marketing">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Digital Marketing</span>
+                </button>
+                <button class="filter-btn" data-filter="design">
+                    <i class="fas fa-palette"></i>
+                    <span>Graphic Design</span>
+                </button>
+                <button class="filter-btn" data-filter="seo">
+                    <i class="fas fa-search"></i>
+                    <span>SEO</span>
+                </button>
+                <button class="filter-btn" data-filter="visa">
+                    <i class="fas fa-plane"></i>
+                    <span>Visa & Travel</span>
+                </button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <article class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">E-commerce</span>
+                        </div>
+                        <h3>E-Commerce Platform for Fashion Brand</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Client needed a modern online store with
+                            seamless payment integration.<br><strong>Solution:</strong> Built a custom WooCommerce store
+                            with optimized checkout flow.<br><strong>Result:</strong> 40% increase in online sales
+                            within 3 months.</p>
+                        <div class="portfolio-tools">
+                            <span>WordPress</span>
+                            <span>WooCommerce</span>
+                            <span>PHP</span>
+                            <span>CSS3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="portfolio-card" data-category="marketing">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-file-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Digital Marketing</span>
+                            <span class="tag">Lead Generation</span>
+                        </div>
+                        <h3>Lead Generation Campaign for Real Estate Agency</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Low-quality leads and high cost per
+                            acquisition.<br><strong>Solution:</strong> Implemented targeted Facebook & Google Ads with
+                            landing page optimization.<br><strong>Result:</strong> 65% reduction in cost per lead, 3x
+                            more qualified inquiries.</p>
+                        <div class="portfolio-tools">
+                            <span>Google Ads</span>
+                            <span>Facebook Ads</span>
+                            <span>Analytics</span>
+                            <span>CRM</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="portfolio-card" data-category="design">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-eye"></i> View Design</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Branding</span>
+                            <span class="tag">Graphic Design</span>
+                        </div>
+                        <h3>Complete Brand Identity for Tech Startup</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> New startup needed cohesive brand identity
+                            from scratch.<br><strong>Solution:</strong> Designed logo, color palette, typography, and
+                            brand guidelines.<br><strong>Result:</strong> Professional brand presence helping secure
+                            seed funding.</p>
+                        <div class="portfolio-tools">
+                            <span>Photoshop</span>
+                            <span>Illustrator</span>
+                            <span>Figma</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="portfolio-card" data-category="seo">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-chart-line"></i> View Results</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">SEO</span>
+                            <span class="tag">Content Strategy</span>
+                        </div>
+                        <h3>SEO & Content Strategy for Legal Firm</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Low organic traffic and poor search
+                            rankings.<br><strong>Solution:</strong> Comprehensive SEO audit, keyword strategy, and
+                            content optimization.<br><strong>Result:</strong> 180% increase in organic traffic, page 1
+                            rankings for 15+ keywords.</p>
+                        <div class="portfolio-tools">
+                            <span>Ahrefs</span>
+                            <span>SEMrush</span>
+                            <span>Google Search Console</span>
+                            <span>Yoast</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Preview</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">Corporate</span>
+                        </div>
+                        <h3>Corporate Website for Consulting Firm</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Outdated website not reflecting company's
+                            professional image.<br><strong>Solution:</strong> Modern, responsive redesign with improved
+                            UX and fast load times.<br><strong>Result:</strong> 50% longer average session duration, 35%
+                            more inquiries.</p>
+                        <div class="portfolio-tools">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="portfolio-card" data-category="marketing">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-image"></i>
+                            <span>Project Screenshot</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-file-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Social Media</span>
+                            <span class="tag">Brand Awareness</span>
+                        </div>
+                        <h3>Social Media Growth for Restaurant Chain</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Minimal social presence and low
+                            engagement.<br><strong>Solution:</strong> Content calendar, influencer partnerships, and
+                            paid campaigns.<br><strong>Result:</strong> 10K+ followers in 6 months, 400% increase in
+                            engagement.</p>
+                        <div class="portfolio-tools">
+                            <span>Instagram</span>
+                            <span>Facebook</span>
+                            <span>Hootsuite</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7 - Visa & Travel -->
+                <article class="portfolio-card" data-category="visa">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-passport"></i>
+                            <span>Travel Services</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-plane"></i> View Details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Visa Services</span>
+                            <span class="tag">Travel Planning</span>
+                        </div>
+                        <h3>Family Visa Processing for UAE Relocation</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Family needed expedited visa processing
+                            for UAE relocation with complex documentation.<br><strong>Solution:</strong> Complete
+                            document preparation, application filing, and embassy
+                            coordination.<br><strong>Result:</strong>
+                            100% visa approval, 2 weeks faster than average processing time.</p>
+                        <div class="portfolio-tools">
+                            <span>UAE Visa</span>
+                            <span>Document Processing</span>
+                            <span>Embassy Liaison</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8 - Visa & Travel -->
+                <article class="portfolio-card" data-category="visa">
+                    <div class="portfolio-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-globe-americas"></i>
+                            <span>Travel Package</span>
+                        </div>
+                        <div class="portfolio-overlay">
+                            <a href="#" class="overlay-btn"><i class="fas fa-file-alt"></i> Case Study</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tags">
+                            <span class="tag">Umrah Package</span>
+                            <span class="tag">Group Travel</span>
+                        </div>
+                        <h3>Corporate Umrah Group Package (15 Travelers)</h3>
+                        <p class="portfolio-desc"><strong>Challenge:</strong> Corporate group needed coordinated
+                            Umrah travel with premium accommodations.<br><strong>Solution:</strong> End-to-end
+                            package including visa, flights, 5-star hotels near Haram, and guided tours.<br>
+                            <strong>Result:</strong> Seamless spiritual journey with 100% client satisfaction.
+                        </p>
+                        <div class="portfolio-tools">
+                            <span>Umrah Visa</span>
+                            <span>Flight Booking</span>
+                            <span>Hotel Coordination</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="portfolio-cta">
+                <p class="cta-text">Liked what you see? Let's build your next project together.</p>
+                <div class="cta-buttons">
+                    <button type="button" class="btn btn-primary-hero" id="openContactFromPortfolio">
+                        <i class="fas fa-rocket"></i> Start Your Project
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="contact-overline">Get In Touch</span>
+                    <h2>Let's Work Together</h2>
+                    <p>Ready to start your project? Have a question? I'd love to hear from you. Reach out using the form
+                        or contact details below.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>contact@ahmadrazamadani.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Response Time</h4>
+                                <p>Within 24 hours</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Serving Clients</h4>
+                                <p>Worldwide (15+ countries)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card">
+                    <form class="contact-form" id="contactSectionForm">
+                        <div class="form-row-contact">
+                            <div class="form-group-contact">
+                                <label for="contactName">Full Name</label>
+                                <input type="text" id="contactName" name="name" placeholder="Your name" required>
+                            </div>
+                            <div class="form-group-contact">
+                                <label for="contactEmail">Email Address</label>
+                                <input type="email" id="contactEmail" name="email" placeholder="you@example.com"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="form-group-contact">
+                            <label for="contactService">Service Interested In</label>
+                            <select id="contactService" name="service" required>
+                                <option value="">Choose a service...</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="quran-teaching">Online Quran Teaching</option>
+                                <option value="seo-optimization">SEO Optimization</option>
+                                <option value="social-media">Social Media Marketing</option>
+                                <option value="gmb-profile">GMB Profile Creation</option>
+                                <option value="design-thinking">Design Thinking</option>
+                                <option value="tajweed-hifz">Tajweed & Hifz Program</option>
+                            </select>
+                        </div>
+                        <div class="form-group-contact">
+                            <label for="contactMessage">Your Message</label>
+                            <textarea id="contactMessage" name="message" placeholder="Tell me about your project..."
+                                rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-contact-submit">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ramadan Mubarak Animated Banner -->
+    <div class="ramadan-marquee">
+        <div class="marquee-track">
+            <div class="marquee-content">
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+                <span class="marquee-text">All lovers of the Prophet ﷺ — Ramadan Mubarak! 🌙</span>
+                <span class="marquee-divider">✦</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>HAYAT ULLAH</h3>
+                    <p>Web Developer | Digital Marketer | Graphic Designer | Online Quran Tutor</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 HAYAT ULLAH. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

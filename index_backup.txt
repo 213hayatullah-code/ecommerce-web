@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamad Khan - Web Developer & Digital Marketer</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <a href="#home" style="font-size: large;">Ahmad Raza Madani</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="dropdown">
+                    <a href="#services" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">Digital Marketing</a></li>
+                        <li><a href="#services">Graphic Design</a></li>
+                        <li><a href="#services">Online Quran Teaching</a></li>
+                        <li><a href="#services">GMB / Google Business Profile Creation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#portfolio" class="nav-link">Portfolio / Projects</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#blog" class="nav-link">Blog / Knowledge</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="hero-content">
+                    <h1>A</h1>
+                    <div class="skills-accent">
+                        <span class="accent-line"></span>
+                        <p class="subtitle">Web Developer | Digital Marketer | Graphic Designer | Online Quran Tutor</p>
+                    </div>
+                    <p class="tagline">Helping Businesses Grow Online & Students Learn Quran with Excellence</p>
+                    <p class="description">I create modern, responsive websites, powerful marketing strategies,
+                        professional designs, and provide Online Quran teaching with dedication and quality.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-blue">Hire Me</a>
+                        <a href="#services" class="btn btn-green">View Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-form-card">
+                    <h3>Quick Inquiry</h3>
+                    <p class="form-subtitle">Get in touch for a quick consultation</p>
+                    <form class="hero-form" id="heroForm">
+                        <div class="form-group">
+                            <label for="heroName">Full Name</label>
+                            <input type="text" id="heroName" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="heroEmail">Email Address</label>
+                            <input type="email" id="heroEmail" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="heroService">Service Interested In</label>
+                            <select id="heroService" name="service">
+                                <option value="">Select a service</option>
+                                <option value="web-development">Web Development</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="graphic-design">Graphic Design</option>
+                                <option value="quran-classes">Online Quran Classes</option>
+                                <option value="gmb">GMB / Google Business Profile Creation</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-blue btn-block">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Arrow -->
+        <div class="scroll-arrow">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-top-row">
+                <div class="about-header">
+                    <h2 class="about-badge">About Me</h2>
+                    <p class="about-intro">I am a hybrid maker who blends Ultra UI craftsmanship, strategy, and
+                        marketing
+                        rigor to help premium brands perform online.</p>
+                </div>
+                <div class="about-portrait">
+                    <div class="portrait-circle">
+                        <span>Portrait Placeholder</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text-layout">
+                <div class="about-main">
+                    <p class="about-lead">I build modern, responsive experiences that feel tailored, cinematic, and
+                        effortlessâ€”every interaction is tested against accessibility, performance, and conversion
+                        clarity.</p>
+                    <p>The work pairs creative systems, digital marketing insight, and clear strategy so that each
+                        project delivers measurable outcomes while remaining a joy to touch and share.</p>
+                </div>
+                <div class="about-text-spacer" aria-hidden="true"></div>
+            </div>
+            <div class="about-services-grid">
+                <div class="about-services-column">
+                    <article class="skill-card">
+                        <h3>Digital Marketing</h3>
+                        <p>Campaign strategy, automation, and analytics pillars that keep acquisition lean and
+                            predictable.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Branding &amp; Strategy</h3>
+                        <p>Cohesive visual systems, messaging frameworks, and creative toolkits that elevate every
+                            launch.</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Web Development</h3>
+                        <p>Scalable Ultra Form layouts, CMS orchestration, and front-end resiliency built for
+                            premium clients.</p>
+                    </article>
+                </div>
+                <div class="about-services-column">
+                    <article class="skill-card">
+                        <h3>Online Quran Teaching</h3>
+                        <ul class="skill-subitems">
+                            <li>Tajweed &amp; Qiraat guidance for confident recitation.</li>
+                            <li>Interactive lessons that balance structure with compassion.</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Strategy</h3>
+                        <p>Intentional roadmaps, stakeholder workshops, and research-backed decisions focused on
+                            clarity and value.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-globe"></i>
+                        <p>Website Development âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Building modern, responsive websites with clean code, fast performance, and seamless user
+                            experiences across all devices.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Digital Marketing âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Strategic online marketing campaigns including PPC, email marketing, and conversion
+                            optimization to grow your business.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-palette"></i>
+                        <p>Graphic Design âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Creative visual designs including logos, branding materials, social media graphics, and
+                            marketing collateral.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-quran"></i>
+                        <p>Online Quran Teaching âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Professional Quran education with Tajweed, Hifz, and Islamic studies through personalized
+                            online sessions.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-search"></i>
+                        <p>SEO Optimization âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Improving search engine rankings through keyword research, on-page optimization, and
+                            technical SEO strategies.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-share-alt"></i>
+                        <p>Social Media Marketing âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Growing brand presence across platforms with engaging content, community management, and
+                            targeted advertising.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Creative Design Thinking âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Problem-solving approach combining empathy, ideation, and prototyping to create innovative
+                            user-centered solutions.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-map-location-dot"></i>
+                        <p>GMB / Google Business Profile âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Setting up and optimizing Google Business Profiles to boost local visibility and attract
+                            nearby customers.</p>
+                    </div>
+                </div>
+                <div class="skill-item" onclick="this.classList.toggle('expanded')">
+                    <div class="skill-item-header">
+                        <i class="fas fa-book-quran"></i>
+                        <p>Qaida Program â€“ Tajweed âœ…</p>
+                        <span class="skill-see-more">See More â†’</span>
+                    </div>
+                    <div class="skill-description">
+                        <p>Special Online Quran Teaching program with expert Tajweed training for beginners and advanced
+                            learners.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services-intro">
+                <span class="section-overline">Services</span>
+                <h2>VIP Ultra Form Services</h2>
+                <p class="intro-copy">Each suite blends strategy and creativity into a cohesive VIP experienceâ€”modern,
+                    responsive, and designed to feel premium at every interaction.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card green-theme">
+                    <div class="service-card-head">
+                        <span class="service-pill">Web Experience</span>
+                        <h3>Web Development</h3>
+                        <p>High-end responsive experiences, CMS architecture, and interaction design built for
+                            conversions.</p>
+                    </div>
+                    <div class="service-panel-stack">
+                        <div class="service-panel active" data-panel="problem">
+                            <p>Existing sites felt fragmented, slow, and misaligned with the brandâ€™s Ultra Form stature.
+                            </p>
+                        </div>
+                        <div class="service-panel" data-panel="solution">
+                            <p>Prototyped and launched a pixel-perfect experience with micro-interactions, automation,
+                                and scalable CMS plumbing.</p>
+                        </div>
+                        <div class="service-panel" data-panel="result">
+                            <p>Page speed jumped 62%, time-on-site increased, and leads surged by 38% within weeks.</p>
+                        </div>
+                    </div>
+                    <div class="service-actions">
+                        <div class="service-panel-buttons">
+                            <button type="button" class="service-btn service-btn-problem"
+                                data-panel="problem">Problem</button>
+                            *** End of content truncated due to length ***
