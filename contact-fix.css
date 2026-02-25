@@ -1,0 +1,598 @@
+/**
+ * Contact Section Visibility Fix for WHITE Background
+ * ====================================================
+ * Fixes text visibility issues by applying professional dark text colors
+ * that contrast well against the white/light background.
+ * 
+ * Color Palette:
+ * - Headings: #1e293b (Dark Slate)
+ * - Body Text: #334155 (Slate Gray)
+ * - Labels: #28a745 (Green) for Headquarters, #2563eb (Blue) for others
+ * - Links: #2563eb (Blue)
+ * - Muted Text: #64748b (Gray)
+ * 
+ * Usage: <link rel="stylesheet" href="contact-fix.css">
+ */
+
+/* ================================
+   White Background Base (Override Dark Styles)
+   ================================ */
+.contact {
+    padding: 80px 24px !important;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* ================================
+   Section Header - Dark Text on White
+   ================================ */
+.contact-section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.contact-section-header .contact-overline {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    font-size: 0.75rem;
+    color: #28a745 !important;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* "Let's Work Together" Heading - Dark */
+.contact-section-header h2 {
+    font-size: 2.4rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 16px;
+    color: #1e293b !important;
+}
+
+.contact-section-header>p {
+    font-size: 1rem;
+    color: #475569 !important;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ================================
+   Office Cards - Professional Light Theme
+   ================================ */
+.contact-office-card {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.office-title h3 {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b !important;
+    margin: 0;
+}
+
+/* Office Labels - Green for Headquarters, Blue for International */
+.office-label {
+    display: inline-block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #28a745 !important;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Pakistan/International Office Labels - Blue */
+.contact-office-card:nth-child(2) .office-label,
+.contact-office-card:last-child .office-label {
+    color: #2563eb !important;
+}
+
+/* Office Detail Labels (Address, Phone, Email, Hours) */
+.office-text h4 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+    color: #28a745 !important;
+    font-weight: 600;
+}
+
+/* Office Detail Text (Values) - Dark for Readability */
+.office-text p {
+    font-size: 0.95rem;
+    color: #334155 !important;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Contact Links (Phone/Email) - Blue */
+.office-text p a.contact-link {
+    color: #2563eb !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.office-text p a.contact-link:hover {
+    color: #28a745 !important;
+    text-decoration: underline;
+}
+
+/* Office Icon */
+.office-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(40, 167, 69, 0.1) 100%) !important;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.office-icon i {
+    font-size: 0.95rem;
+    color: #28a745 !important;
+}
+
+/* Office Map Link */
+.office-map-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    background: rgba(40, 167, 69, 0.1) !important;
+    color: #28a745 !important;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.office-map-link:hover {
+    background: #28a745 !important;
+    color: #ffffff !important;
+}
+
+/* ================================
+   Social Card - "Connect With Us" Section
+   ================================ */
+.contact-social-card {
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* "Connect with us on social media" Heading - Dark */
+.contact-social-card h3 {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: #1e293b !important;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-social-card h3 i {
+    color: #28a745 !important;
+}
+
+/* Social Card Description Text - Dark Gray */
+.contact-social-card>p {
+    font-size: 0.9rem;
+    color: #475569 !important;
+    margin-bottom: 24px;
+}
+
+/* Social Icons - Light Theme */
+.contact-social-icons-large {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.contact-social-icons-large .contact-social-link {
+    width: 100%;
+    height: auto;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    color: #334155 !important;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.contact-social-icons-large .contact-social-link i {
+    font-size: 1.1rem;
+    width: 24px;
+    text-align: center;
+    color: #2563eb !important;
+}
+
+.contact-social-icons-large .contact-social-link span {
+    flex: 1;
+    color: #334155 !important;
+}
+
+.contact-social-icons-large .contact-social-link:hover {
+    background: linear-gradient(135deg, #2563eb 0%, #28a745 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+    border-color: transparent !important;
+}
+
+.contact-social-icons-large .contact-social-link:hover i,
+.contact-social-icons-large .contact-social-link:hover span {
+    color: #ffffff !important;
+}
+
+.contact-social-icons-large .contact-social-whatsapp:hover {
+    background: #25D366 !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* Quick Response Badge */
+.contact-quick-response {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.quick-response-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: rgba(40, 167, 69, 0.1) !important;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.quick-response-badge i {
+    color: #28a745 !important;
+    font-size: 0.85rem;
+}
+
+.quick-response-badge span {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #28a745 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.contact-quick-response p {
+    font-size: 0.85rem;
+    color: #64748b !important;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ================================
+   Form Card (Light Background)
+   ================================ */
+.contact-form-card-wide {
+    background: #ffffff !important;
+    padding: 36px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form-header h3 {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color: #111111 !important;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form-header h3 i {
+    color: #2563eb !important;
+}
+
+.contact-form-header p {
+    font-size: 0.9rem;
+    color: #64748b !important;
+    margin: 0;
+}
+
+/* Form Labels */
+.form-group-contact label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #111111 !important;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-group-contact label .required {
+    color: #ef4444 !important;
+}
+
+.form-group-contact label .optional {
+    color: #94a3b8 !important;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+/* Form Inputs */
+.form-group-contact input,
+.form-group-contact select,
+.form-group-contact textarea {
+    padding: 12px 16px;
+    border: 1.5px solid rgba(15, 23, 42, 0.15) !important;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    background: #f8fafc !important;
+    color: #111111 !important;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-group-contact input::placeholder,
+.form-group-contact textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+.form-group-contact input:focus,
+.form-group-contact select:focus,
+.form-group-contact textarea:focus {
+    outline: none;
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+    background: #ffffff !important;
+}
+
+/* Submit Button */
+.btn-contact-submit {
+    background: linear-gradient(135deg, #2563eb 0%, #10b981 100%) !important;
+    color: #ffffff !important;
+    border: none;
+    padding: 16px 28px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-contact-submit:hover {
+    background: linear-gradient(135deg, #1d4ed8 0%, #059669 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+}
+
+.btn-contact-submit i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-contact-submit:hover i {
+    transform: translateX(4px);
+}
+
+/* ================================
+   Additional Text Visibility Rules
+   (Catch-all for any white text on white background)
+   ================================ */
+
+/* All headings in contact section - Dark */
+.contact h2,
+.contact h3,
+.contact h4,
+.contact h5 {
+    color: #1e293b !important;
+}
+
+/* Override for specific green labels */
+.contact .office-text h4,
+.contact .office-label {
+    color: #28a745 !important;
+}
+
+/* All paragraphs and text in contact section - Dark Gray */
+.contact p,
+.contact span,
+.contact li {
+    color: #334155 !important;
+}
+
+/* Override for specific styled elements */
+.contact .contact-overline {
+    color: #28a745 !important;
+}
+
+.contact .contact-section-header>p {
+    color: #475569 !important;
+}
+
+.contact a:not(.btn):not(.contact-social-link):not(.office-map-link) {
+    color: #2563eb !important;
+}
+
+/* Office Flag - Keep visible */
+.office-flag {
+    background: linear-gradient(135deg, #2563eb 0%, #28a745 100%) !important;
+}
+
+.office-flag i {
+    color: #ffffff !important;
+}
+
+/* Office working hours */
+.office-hours-badge {
+    color: #28a745 !important;
+    background: rgba(40, 167, 69, 0.1) !important;
+}
+
+/* Any remaining white text overrides */
+.contact [style*="color: white"],
+.contact [style*="color: #fff"],
+.contact [style*="color: #ffffff"] {
+    color: #334155 !important;
+}
+
+/* ================================
+   Responsive Fixes
+   ================================ */
+@media (max-width: 1024px) {
+    .contact-offices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .contact-form-social-wrapper {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .contact-social-icons-large {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-social-icons-large .contact-social-link {
+        flex-direction: column;
+        padding: 16px 12px;
+        text-align: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 20px !important;
+    }
+
+    .contact-offices-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-section-header {
+        margin-bottom: 36px;
+    }
+
+    .contact-section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact-office-card {
+        padding: 24px;
+    }
+
+    .office-flag {
+        width: 48px;
+        height: 48px;
+    }
+
+    .office-flag i {
+        font-size: 1.25rem;
+    }
+
+    .contact-social-icons-large {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-social-icons-large .contact-social-link {
+        flex-direction: row;
+        padding: 14px 16px;
+        text-align: left;
+    }
+
+    .contact-form-card-wide {
+        padding: 28px 20px;
+    }
+
+    .form-row-contact {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 540px) {
+    .contact {
+        padding: 50px 16px !important;
+    }
+
+    .contact-section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-office-card {
+        padding: 20px;
+    }
+
+    .office-card-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .office-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .office-text {
+        text-align: center;
+    }
+
+    .contact-social-card {
+        padding: 24px 20px;
+    }
+
+    .contact-social-icons-large {
+        grid-template-columns: 1fr;
+    }
+
+    .office-map iframe {
+        height: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact {
+        padding: 40px 12px !important;
+    }
+
+    .contact-section-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .contact-form-card-wide {
+        padding: 20px 16px;
+    }
+
+    .btn-contact-submit {
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+}
